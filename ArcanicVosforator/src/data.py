@@ -57,9 +57,9 @@ totalVosfor = int(totalVosfor)
 grandTotalVosforCount = 0
 grandTotalVosforCount = int(grandTotalVosforCount)
 
-def addToTotalVosforCount(vosforRate):
+def addToTotalVosforCount(vosforRate, arcaneQuantity):
     global totalVosfor
-    totalVosfor += int(vosforRate)
+    totalVosfor += (int(vosforRate * arcaneQuantity))
 
 def getTotalVosforCount():
     return totalVosfor
@@ -68,9 +68,9 @@ def clearTotalVosforCount():
     global totalVosfor
     totalVosfor = 0
 
-def addToGrandTotalVosforCount(vosforRate):
+def addToGrandTotalVosforCount():
     global grandTotalVosforCount
-    grandTotalVosforCount += int(vosforRate)
+    grandTotalVosforCount += getTotalVosforCount()
 
 def getGrandTotalVosforCount():
     return grandTotalVosforCount
