@@ -1,12 +1,11 @@
 package org.example.arcanicvosforator;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -15,7 +14,7 @@ import javafx.stage.Stage;
 
 public class ArcanicVosforatorInterface extends Application {
 
-    ArcanicVosforatorData data = new ArcanicVosforatorData();
+    private final ArcanicVosforatorData data = new ArcanicVosforatorData();
 
     public ArcanicVosforatorData getData() {
         return data;
@@ -23,27 +22,31 @@ public class ArcanicVosforatorInterface extends Application {
 
     @Override
     public void start(Stage stage) {
-        ComboBox arcaneSetList = new ComboBox();
-        HBox arcaneSetFilters = new HBox();
+        getData().setEidolonArcaneSet();
+        ComboBox arcaneSetList = new ComboBox(FXCollections.observableArrayList(getData().getEidolonArcaneSet()));
+        TextField arcaneQuantity = new TextField();
         HBox arcaneSetBreakdown = new HBox();
-        VBox arcaneSet = new VBox();
-        Button getArcaneVosfor = new Button();
-        getArcaneVosfor.setText("Select");
-        CheckBox eidolonArcaneSet = new CheckBox();
-        eidolonArcaneSet.setText("Eidolon Arcane Set");
-        CheckBox cetusArcaneSet = new CheckBox();
-        cetusArcaneSet.setText("Cetus Arcane Set");
-        GridPane selectArcanes = new GridPane();
-        arcaneSetFilters.getChildren().addAll(new Text("Filters: "), eidolonArcaneSet, cetusArcaneSet);
-        arcaneSetFilters.setSpacing(12);
-        arcaneSetBreakdown.getChildren().addAll(arcaneSetList, getArcaneVosfor);
+        Button selectArcane = new Button();
+        ScrollPane listOfArcanes = new ScrollPane();
+        listOfArcanes.setScaleX(2.2);
+        listOfArcanes.setPrefSize(150, 450);
+        Text label = new Text();
+        VBox arcaneBreakdown = new VBox();
+        GridPane grid = new GridPane();
+        arcaneBreakdown.getChildren().addAll(listOfArcanes, label);
+        arcaneBreakdown.setSpacing(12);
+        selectArcane.setText("Select");
+        label.setText("Ember Heirloom Ass > Wisp Ass"); // placeholder text.
+        label.setScaleX(1.4);
+        label.setScaleY(1.4);
+        arcaneSetBreakdown.getChildren().addAll(arcaneSetList, arcaneQuantity, selectArcane);
         arcaneSetBreakdown.setSpacing(12);
-        arcaneSet.getChildren().addAll(arcaneSetFilters, arcaneSetBreakdown);
-        arcaneSet.setSpacing(12);
-        selectArcanes.setAlignment(Pos.TOP_LEFT);
-        selectArcanes.setPadding(new Insets(20, 20, 20, 20));
-        selectArcanes.add(arcaneSet, 0, 2);
-        Scene scene = new Scene(selectArcanes, 800, 600);
+        arcaneSetBreakdown.setPadding(new Insets(20, 20, 20, 20));
+        grid.add(arcaneSetBreakdown, 0, 0);
+        grid.add(arcaneBreakdown, 1, 1);
+        grid.setHgap(100);
+        grid.setVgap(-45);
+        Scene scene = new Scene(grid, 800, 600);
         stage.setScene(scene);
         stage.setTitle("Arcanic Vosforator");
         stage.show();
