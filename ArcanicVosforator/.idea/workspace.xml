@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="switched to Java and JavaFX for the project for ease of use.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/arcanicvosforator/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ArcanicVosforator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/references/Vosfor.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +30,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jeH8lAwKzaBxcVvlZlsiiO5zD3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ArcanicVosforatorData.executor": "Run",
+    "Application.ArcanicVosforatorInterface.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -93,8 +74,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721740466319</updated>
-      <workItem from="1721740467416" duration="4372000" />
+      <workItem from="1721740467416" duration="4448000" />
+      <workItem from="1721778616204" duration="3396000" />
     </task>
+    <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
+      <option name="closed" value="true" />
+      <created>1721744877759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721744877775</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
