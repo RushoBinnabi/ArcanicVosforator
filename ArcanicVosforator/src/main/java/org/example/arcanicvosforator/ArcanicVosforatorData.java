@@ -83,7 +83,7 @@ public class ArcanicVosforatorData {
         return fortunaArcaneSet;
     }
 
-    public ArrayList<String> getLuaConjunctionArcaneSet() {
+    public ArrayList<String> getLuaArcaneSet() {
         return luaConjunctionArcaneSet;
     }
 
@@ -188,11 +188,11 @@ public class ArcanicVosforatorData {
         getFortunaArcaneSet().add("Pax Soar");
     }
 
-    public void setLuaConjunctionArcaneSet() {
-        getLuaConjunctionArcaneSet().add("Arcane Blessing");
-        getLuaConjunctionArcaneSet().add("Arcane Rise");
-        getLuaConjunctionArcaneSet().add("Conjunction Voltage");
-        getLuaConjunctionArcaneSet().add("Primary Frostbite");
+    public void setLuaArcaneSet() {
+        getLuaArcaneSet().add("Arcane Blessing");
+        getLuaArcaneSet().add("Arcane Rise");
+        getLuaArcaneSet().add("Conjunction Voltage");
+        getLuaArcaneSet().add("Primary Frostbite");
     }
 
     public void setNecraliskArcaneSet() {

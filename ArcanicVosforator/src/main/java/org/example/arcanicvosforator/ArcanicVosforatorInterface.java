@@ -1,7 +1,6 @@
 package org.example.arcanicvosforator;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -31,6 +30,16 @@ public class ArcanicVosforatorInterface extends Application {
     CheckBox cetusArcaneSetFilter = new CheckBox();
     CheckBox arbitrationArcaneSetFilter = new CheckBox();
     CheckBox steelPathArcaneSetFilter = new CheckBox();
+    CheckBox zarimanArcaneSetFilter = new CheckBox();
+    CheckBox quillsArcaneSetFilter = new CheckBox();
+    CheckBox necraliskArcaneSetFilter = new CheckBox();
+    CheckBox duviriArcaneSetFilter = new CheckBox();
+    CheckBox caviaArcaneSetFilter = new CheckBox();
+    CheckBox luaArcaneSetFilter = new CheckBox();
+    CheckBox fortunaArcaneSetFilter = new CheckBox();
+    CheckBox mirrorDefenseArcaneSetFilter = new CheckBox();
+    CheckBox plagueStarArcaneSetFilter = new CheckBox();
+    CheckBox voxSolarisArcaneSetFilter = new CheckBox();
 
     public ArcanicVosforatorData getData() {
         return data;
@@ -42,13 +51,25 @@ public class ArcanicVosforatorInterface extends Application {
         cetusArcaneSetFilter.setText("Cetus Arcane Set");
         arbitrationArcaneSetFilter.setText("Arbitration Arcane Set");
         steelPathArcaneSetFilter.setText("Steel Path Arcane Set");
-        arcaneSetFilters.getChildren().addAll(eidolonArcaneSetFilter, cetusArcaneSetFilter, arbitrationArcaneSetFilter, steelPathArcaneSetFilter);
+        zarimanArcaneSetFilter.setText("Zariman Arcane Set");
+        quillsArcaneSetFilter.setText("Quills Arcane Set");
+        necraliskArcaneSetFilter.setText("Necralisk Arcane Set");
+        duviriArcaneSetFilter.setText("Duviri Arcane Set");
+        caviaArcaneSetFilter.setText("Cavia Arcane Set");
+        luaArcaneSetFilter.setText("Lua Arcane Set");
+        fortunaArcaneSetFilter.setText("Fortuna Arcane Set");
+        mirrorDefenseArcaneSetFilter.setText("Mirror Defense Arcane Set");
+        plagueStarArcaneSetFilter.setText("Plague Star Arcane Set");
+        voxSolarisArcaneSetFilter.setText("Vox Solaris Arcane Set");
+        arcaneSetFilters.getChildren().addAll(eidolonArcaneSetFilter, cetusArcaneSetFilter, arbitrationArcaneSetFilter,
+                steelPathArcaneSetFilter, zarimanArcaneSetFilter, quillsArcaneSetFilter, necraliskArcaneSetFilter,
+                duviriArcaneSetFilter, caviaArcaneSetFilter, luaArcaneSetFilter, fortunaArcaneSetFilter,
+                mirrorDefenseArcaneSetFilter, plagueStarArcaneSetFilter, voxSolarisArcaneSetFilter);
         arcaneSetFilters.setPadding(new Insets(50,50,50,50));
         arcaneSetFilters.setSpacing(12);
         arcaneSetFilters.setAlignment(Pos.TOP_CENTER);
         setArcanes();
         getData().setVosforRates();
-        arcaneSetList.setItems(FXCollections.observableArrayList(getData().getEidolonArcaneSet()));
         listOfArcanes.setScaleX(2.2);
         listOfArcanes.setPrefSize(150, 450);
         buttons.getChildren().addAll(selectArcane, clearArcanes);
@@ -82,7 +103,7 @@ public class ArcanicVosforatorInterface extends Application {
         getData().setNecraliskArcaneSet();
         getData().setDuviriArcaneSet();
         getData().setCaviaArcaneSet();
-        getData().setLuaConjunctionArcaneSet();
+        getData().setLuaArcaneSet();
         getData().setFortunaArcaneSet();
         getData().setMirrorDefenseArcaneSet();
         getData().setCetusArcaneSet();

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="finished working on designing the UI. Hopefully.">
+    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="finished working on the UI.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,8 @@
       <workItem from="1721828899618" duration="4774000" />
       <workItem from="1721961308226" duration="1074000" />
       <workItem from="1722001406392" duration="19000" />
-      <workItem from="1722016196722" duration="4231000" />
+      <workItem from="1722016196722" duration="4422000" />
+      <workItem from="1722085832885" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
       <option name="closed" value="true" />
@@ -105,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721962394924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="restructured the code for the UI and started work on adding filtering options.">
+      <option name="closed" value="true" />
+      <created>1722020622715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020622715</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +125,8 @@
     <MESSAGE value="switched to Java and JavaFX for the project for ease of use." />
     <MESSAGE value="updated more of the UI and the readme file" />
     <MESSAGE value="finished working on designing the UI. Hopefully." />
-    <option name="LAST_COMMIT_MESSAGE" value="finished working on designing the UI. Hopefully." />
+    <MESSAGE value="restructured the code for the UI and started work on adding filtering options." />
+    <MESSAGE value="finished working on the UI." />
+    <option name="LAST_COMMIT_MESSAGE" value="finished working on the UI." />
   </component>
 </project>
