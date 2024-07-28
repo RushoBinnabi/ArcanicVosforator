@@ -19,6 +19,8 @@ public class ArcanicVosforatorData {
     private final ArrayList<String> quillsArcaneSet = new ArrayList<>();
     private final ArrayList<String> voxSolarisArcaneSet = new ArrayList<>();
     private final ArrayList<String> zarimanArcaneSet = new ArrayList<>();
+    static final int UI_HEIGHT = 620;
+    static final int UI_WIDTH = 800;
 
     private int totalVosfor = 0;
     private int grandTotalVosforCount = 0;

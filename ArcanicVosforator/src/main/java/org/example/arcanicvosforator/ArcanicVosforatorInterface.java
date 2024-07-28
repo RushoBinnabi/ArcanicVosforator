@@ -20,7 +20,7 @@ public class ArcanicVosforatorInterface extends Application {
     HBox buttons = new HBox();
     Button selectArcane = new Button();
     Button clearArcanes = new Button();
-    ScrollPane listOfArcanes = new ScrollPane();
+    TextArea listOfArcanes = new TextArea();
     Text label = new Text();
     VBox arcaneBreakdown = new VBox();
     GridPane grid = new GridPane();
@@ -47,6 +47,7 @@ public class ArcanicVosforatorInterface extends Application {
 
     @Override
     public void start(Stage stage) {
+        listOfArcanes.setEditable(false);
         eidolonArcaneSetFilter.setText("Eidolon Arcane Set");
         cetusArcaneSetFilter.setText("Cetus Arcane Set");
         arbitrationArcaneSetFilter.setText("Arbitration Arcane Set");
@@ -79,6 +80,7 @@ public class ArcanicVosforatorInterface extends Application {
         arcaneBreakdown.setSpacing(12);
         selectArcane.setText("Select");
         clearArcanes.setText("Clear");
+        clearArcanes.setOnAction(actionEvent -> clearDataEvent());
         label.setScaleX(1.4);
         label.setScaleY(1.4);
         arcaneSetBreakdown.getChildren().addAll(arcaneSetList, arcaneQuantity);
@@ -89,7 +91,7 @@ public class ArcanicVosforatorInterface extends Application {
         grid.add(arcaneBreakdown, 1, 1);
         grid.setHgap(120);
         grid.setVgap(-45);
-        scene = new Scene(grid, 800, 620);
+        scene = new Scene(grid, ArcanicVosforatorData.UI_WIDTH, ArcanicVosforatorData.UI_HEIGHT);
         stage.setScene(scene);
         stage.setTitle("Arcanic Vosforator");
         stage.show();
@@ -111,6 +113,27 @@ public class ArcanicVosforatorInterface extends Application {
         getData().setSteelPathArcaneSet();
         getData().setVoxSolarisArcaneSet();
     }
+
+    private void clearDataEvent() {
+        arcaneQuantity.clear();
+        listOfArcanes.clear();
+        eidolonArcaneSetFilter.setSelected(false);
+        cetusArcaneSetFilter.setSelected(false);
+        arbitrationArcaneSetFilter.setSelected(false);
+        steelPathArcaneSetFilter.setSelected(false);
+        zarimanArcaneSetFilter.setSelected(false);
+        quillsArcaneSetFilter.setSelected(false);
+        necraliskArcaneSetFilter.setSelected(false);
+        duviriArcaneSetFilter.setSelected(false);
+        caviaArcaneSetFilter.setSelected(false);
+        luaArcaneSetFilter.setSelected(false);
+        fortunaArcaneSetFilter.setSelected(false);
+        mirrorDefenseArcaneSetFilter.setSelected(false);
+        plagueStarArcaneSetFilter.setSelected(false);
+        voxSolarisArcaneSetFilter.setSelected(false);
+    }
+
+
 
     public static void main(String[] args) {
         launch();
