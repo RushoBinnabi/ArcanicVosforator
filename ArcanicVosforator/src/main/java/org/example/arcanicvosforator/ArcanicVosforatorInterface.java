@@ -1,6 +1,7 @@
 package org.example.arcanicvosforator;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -71,6 +72,245 @@ public class ArcanicVosforatorInterface extends Application {
         arcaneSetFilters.setAlignment(Pos.TOP_CENTER);
         setArcanes();
         getData().setVosforRates();
+        eidolonArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getEidolonArcaneSet()));
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        cetusArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getCetusArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        arbitrationArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getArbitrationArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        steelPathArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getSteelPathArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        zarimanArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getZarimanArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        quillsArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getQuillsArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        necraliskArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getNecraliskArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        duviriArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getDuviriArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        caviaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getCaviaArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                quillsArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                luaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        luaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getLuaArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                fortunaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        fortunaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getFortunaArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        mirrorDefenseArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getMirrorDefenseArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        plagueStarArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getPlagueStarArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                voxSolarisArcaneSetFilter.setSelected(false);
+            }
+        });
+        voxSolarisArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getVoxSolarisArcaneSet()));
+                eidolonArcaneSetFilter.setSelected(false);
+                cetusArcaneSetFilter.setSelected(false);
+                arbitrationArcaneSetFilter.setSelected(false);
+                steelPathArcaneSetFilter.setSelected(false);
+                zarimanArcaneSetFilter.setSelected(false);
+                necraliskArcaneSetFilter.setSelected(false);
+                duviriArcaneSetFilter.setSelected(false);
+                caviaArcaneSetFilter.setSelected(false);
+                mirrorDefenseArcaneSetFilter.setSelected(false);
+                plagueStarArcaneSetFilter.setSelected(false);
+            }
+        });
         listOfArcanes.setScaleX(2.2);
         listOfArcanes.setPrefSize(150, 450);
         buttons.getChildren().addAll(selectArcane, clearArcanes);
@@ -117,6 +357,7 @@ public class ArcanicVosforatorInterface extends Application {
     private void clearDataEvent() {
         arcaneQuantity.clear();
         listOfArcanes.clear();
+        arcaneSetList.setItems(null);
         eidolonArcaneSetFilter.setSelected(false);
         cetusArcaneSetFilter.setSelected(false);
         arbitrationArcaneSetFilter.setSelected(false);
@@ -132,7 +373,6 @@ public class ArcanicVosforatorInterface extends Application {
         plagueStarArcaneSetFilter.setSelected(false);
         voxSolarisArcaneSetFilter.setSelected(false);
     }
-
 
 
     public static void main(String[] args) {
