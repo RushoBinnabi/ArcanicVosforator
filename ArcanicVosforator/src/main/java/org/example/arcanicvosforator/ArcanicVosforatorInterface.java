@@ -9,8 +9,11 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class ArcanicVosforatorInterface extends Application {
 
@@ -41,6 +44,7 @@ public class ArcanicVosforatorInterface extends Application {
     CheckBox mirrorDefenseArcaneSetFilter = new CheckBox();
     CheckBox plagueStarArcaneSetFilter = new CheckBox();
     CheckBox voxSolarisArcaneSetFilter = new CheckBox();
+    ArrayList<String> arcaneList = new ArrayList<>();
 
     public ArcanicVosforatorData getData() {
         return data;
@@ -320,6 +324,7 @@ public class ArcanicVosforatorInterface extends Application {
         arcaneBreakdown.setSpacing(12);
         selectArcane.setText("Select");
         clearArcanes.setText("Clear");
+        selectArcane.setOnAction(actionEvent -> selectArcaneEvent());
         clearArcanes.setOnAction(actionEvent -> clearDataEvent());
         label.setScaleX(1.4);
         label.setScaleY(1.4);
@@ -354,9 +359,28 @@ public class ArcanicVosforatorInterface extends Application {
         getData().setVoxSolarisArcaneSet();
     }
 
+    private void selectArcaneEvent() {
+        int quantity;
+        String arcane;
+        try {
+            quantity = Integer.parseInt(arcaneQuantity.getText());
+            arcane = String.valueOf(arcaneSetList.getValue());
+            listOfArcanes.setFont(Font.font("Ariel", 9));
+            arcaneList.add(quantity + "x" + " " + arcane);
+            for (String s : arcaneList) {
+                listOfArcanes.appendText(s + "\n");
+            }
+            arcaneList.remove(quantity + "x" + " " + arcane);
+        }
+        catch (Exception e) {
+            label.setText("Error. Please make sure you select an arcane and quantity");
+        }
+    }
+
     private void clearDataEvent() {
         arcaneQuantity.clear();
         listOfArcanes.clear();
+        label.setText("");
         arcaneSetList.setItems(null);
         eidolonArcaneSetFilter.setSelected(false);
         cetusArcaneSetFilter.setSelected(false);
