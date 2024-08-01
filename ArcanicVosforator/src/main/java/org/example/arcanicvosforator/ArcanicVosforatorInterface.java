@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("DuplicateBranchesInSwitch")
 public class ArcanicVosforatorInterface extends Application {
 
     private final ArcanicVosforatorData data = new ArcanicVosforatorData();
@@ -376,13 +377,15 @@ public class ArcanicVosforatorInterface extends Application {
                 case "Arcane Blade Charger":
                     getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
                     getData().addToGrandTotalVosforCount();
-                    getData().clearTotalVosforCount();
+                    break;
+                case "Arcane Bodyguard":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
                     break;
             }
             label.setText("Total" + " " + getData().getGrandTotalVosfor());
             getData().clearGrandTotalVosforCount();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             label.setText("Error. Please make sure you select an arcane and quantity");
         }
     }
