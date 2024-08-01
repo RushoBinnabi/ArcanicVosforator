@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="added functionality for the filtering options">
+    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="added functionality for adding to the arcane breakdown list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
     </list>
@@ -103,7 +103,8 @@
       <workItem from="1722085832885" duration="1606000" />
       <workItem from="1722176928512" duration="4144000" />
       <workItem from="1722344571199" duration="8242000" />
-      <workItem from="1722439707987" duration="3982000" />
+      <workItem from="1722439707987" duration="4041000" />
+      <workItem from="1722515831488" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
       <option name="closed" value="true" />
@@ -161,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722353589128</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added functionality for adding to the arcane breakdown list">
+      <option name="closed" value="true" />
+      <created>1722443812892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722443812893</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +184,7 @@
     <MESSAGE value="finished working on the UI." />
     <MESSAGE value="started working on the functionality for the project." />
     <MESSAGE value="added functionality for the filtering options" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality for the filtering options" />
+    <MESSAGE value="added functionality for adding to the arcane breakdown list" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality for adding to the arcane breakdown list" />
   </component>
 </project>

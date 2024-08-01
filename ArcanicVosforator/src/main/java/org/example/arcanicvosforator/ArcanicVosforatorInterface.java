@@ -322,6 +322,7 @@ public class ArcanicVosforatorInterface extends Application {
         buttons.setAlignment(Pos.CENTER);
         arcaneBreakdown.getChildren().addAll(listOfArcanes, buttons, label);
         arcaneBreakdown.setSpacing(12);
+        arcaneBreakdown.setAlignment(Pos.CENTER);
         selectArcane.setText("Select");
         clearArcanes.setText("Clear");
         selectArcane.setOnAction(actionEvent -> selectArcaneEvent());
@@ -371,6 +372,15 @@ public class ArcanicVosforatorInterface extends Application {
                 listOfArcanes.appendText(s + "\n");
             }
             arcaneList.remove(quantity + "x" + " " + arcane);
+            switch (arcane) {
+                case "Arcane Blade Charger":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    getData().clearTotalVosforCount();
+                    break;
+            }
+            label.setText("Total" + " " + getData().getGrandTotalVosfor());
+            getData().clearGrandTotalVosforCount();
         }
         catch (Exception e) {
             label.setText("Error. Please make sure you select an arcane and quantity");
