@@ -114,17 +114,18 @@ public class ArcanicVosforatorData {
     }
 
     public void setVosforRates() {
-        getVosforRates().add(3);
-        getVosforRates().add(12);
-        getVosforRates().add(14);
-        getVosforRates().add(18);
-        getVosforRates().add(20);
-        getVosforRates().add(21);
-        getVosforRates().add(22);
-        getVosforRates().add(24);
-        getVosforRates().add(28);
-        getVosforRates().add(84);
-        getVosforRates().add(98);
+        getVosforRates().add(3); // index 0
+        getVosforRates().add(12); // index 1
+        getVosforRates().add(14); // index 2
+        getVosforRates().add(18); // index 3
+        getVosforRates().add(20); // index 4
+        getVosforRates().add(21); // index 5
+        getVosforRates().add(22); // index 6
+        getVosforRates().add(24); // index 7
+        getVosforRates().add(28); // index 8
+        getVosforRates().add(84); // index 9
+        getVosforRates().add(98); // index 10
+        getVosforRates().add(0); // index 11.
     }
 
     public void setArbitrationArcaneSet() {

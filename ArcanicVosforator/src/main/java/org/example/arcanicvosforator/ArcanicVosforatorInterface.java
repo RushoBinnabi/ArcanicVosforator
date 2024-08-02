@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-@SuppressWarnings("DuplicateBranchesInSwitch")
+@SuppressWarnings("DuplicateBranchesInSwitch") // there was nothing wrong with the branches.
 public class ArcanicVosforatorInterface extends Application {
 
     private final ArcanicVosforatorData data = new ArcanicVosforatorData();
@@ -374,6 +374,7 @@ public class ArcanicVosforatorInterface extends Application {
             }
             arcaneList.remove(quantity + "x" + " " + arcane);
             switch (arcane) {
+                // arbitration arcane set.
                 case "Arcane Blade Charger":
                     getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
                     getData().addToGrandTotalVosforCount();
@@ -382,10 +383,168 @@ public class ArcanicVosforatorInterface extends Application {
                     getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
                     getData().addToGrandTotalVosforCount();
                     break;
+                case "Arcane Pistoleer":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Primary Charger":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Tanker":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // arbitration arcane set.
+                // tyana pass arcane set.
+                case "Arcane Double Back":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Steadfast":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Plated Round":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Encumber":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Kinship":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // tyana pass arcane set.
+                // cavia arcane set.
+                case "Melee Fortification":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Retaliation":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Animosity":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Exposure":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Influence":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Vortex":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Crescendo":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Melee Duplicate":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // cavia arcane set.
+                // plague star arcane set.
+                case "Exodia Contagion":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(11), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Epidemic":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(11), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // plague star arcane set.
+                // cetus arcane set.
+                case "Exodia Brave":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Force":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Hunt":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Might":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Triumph":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Exodia Valor":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // cetus arcane set.
+                // duviri arcane set.
+                case "Akimbo Slip Shot":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Intention":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Power Ramp":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Aggress":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Blight":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Exhilarate":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Obstruct":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Outburst":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Shotgun Vendetta":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Reaper":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Longbow Sharpshot":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Shiver":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // duviri arcane set.
+                // fortuna arcane set.
+
             }
             label.setText("Total" + " " + getData().getGrandTotalVosfor());
             getData().clearGrandTotalVosforCount();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             label.setText("Error. Please make sure you select an arcane and quantity");
         }
     }
