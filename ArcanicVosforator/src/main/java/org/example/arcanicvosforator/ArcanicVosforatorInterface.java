@@ -539,7 +539,220 @@ public class ArcanicVosforatorInterface extends Application {
                     break;
                 // duviri arcane set.
                 // fortuna arcane set.
-
+                case "Pax Bolt":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Pax Charge":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Pax Seeker":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Pax Soar":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // fortuna arcane set.
+                // lua arcane set.
+                case "Arcane Blessing":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Rise":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Conjunction Voltage":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Frostbite":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // lua arcane set.
+                // necralisk arcane set.
+                case "Residual Boils":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Residual Malodor":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Residual Shock":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Residual Viremia":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Theorem Contagion":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Theorem Demulcent":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Theorem Infection":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // necralisk arcane set.
+                // eidolon arcane set.
+                case "Arcane Acceleration":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Aegis":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Agility":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Arachne":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Avenger":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Awakening":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Barrier":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Consequence":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Deflection":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Energize":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Eruption":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Fury":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Grace":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Guardian":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Healing":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Ice":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Momentum":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(0), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Nullifier":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Phantasm":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Precision":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Pulse":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Rage":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Resistance":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Strike":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Tempo":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Trickery":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Ultimatum":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Velocity":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Victory":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Arcane Warmth":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // eidolon arcane set.
+                // steel path arcane set.
+                case "Primary Deadhead":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Dexterity":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Primary Merciless":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Deadhead":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Dexterity":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Secondary Merciless":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // steel path arcane set.
+                // quills arcane set.
             }
             label.setText("Total" + " " + getData().getGrandTotalVosfor());
             getData().clearGrandTotalVosforCount();
@@ -550,6 +763,8 @@ public class ArcanicVosforatorInterface extends Application {
     }
 
     private void clearDataEvent() {
+        getData().clearTotalVosforCount();
+        getData().clearGrandTotalVosforCount();
         arcaneQuantity.clear();
         listOfArcanes.clear();
         label.setText("");
@@ -570,8 +785,8 @@ public class ArcanicVosforatorInterface extends Application {
         voxSolarisArcaneSetFilter.setSelected(false);
     }
 
-
     public static void main(String[] args) {
         launch();
     }
+
 }

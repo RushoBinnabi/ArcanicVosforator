@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="added functionality for adding to the arcane breakdown list">
+    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="added functionality for adding to the arcane breakdown list for more arcane sets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,25 +41,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArcanicVosforatorData.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArcanicVosforatorInterface.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rusho/Documents/Projects/ArcanicVosforator/ArcanicVosforator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArcanicVosforatorData.executor": "Run",
+    "Application.ArcanicVosforatorInterface.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rusho/Documents/Projects/ArcanicVosforator/ArcanicVosforator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ArcanicVosforatorInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.arcanicvosforator.ArcanicVosforatorInterface" />
@@ -111,7 +115,8 @@
       <workItem from="1722521851945" duration="694000" />
       <workItem from="1722522598058" duration="1546000" />
       <workItem from="1722537352852" duration="66000" />
-      <workItem from="1722603673338" duration="1683000" />
+      <workItem from="1722603673338" duration="1986000" />
+      <workItem from="1722689729512" duration="2783000" />
     </task>
     <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
       <option name="closed" value="true" />
@@ -177,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722443812893</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added functionality for adding to the arcane breakdown list for more arcane sets">
+      <option name="closed" value="true" />
+      <created>1722605676803</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722605676803</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +205,7 @@
     <MESSAGE value="started working on the functionality for the project." />
     <MESSAGE value="added functionality for the filtering options" />
     <MESSAGE value="added functionality for adding to the arcane breakdown list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality for adding to the arcane breakdown list" />
+    <MESSAGE value="added functionality for adding to the arcane breakdown list for more arcane sets" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality for adding to the arcane breakdown list for more arcane sets" />
   </component>
 </project>
