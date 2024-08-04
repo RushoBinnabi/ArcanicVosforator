@@ -82,240 +82,85 @@ public class ArcanicVosforatorInterface extends Application {
         eidolonArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getEidolonArcaneSet()));
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("eidolon");
             }
         });
         cetusArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getCetusArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("cetus");
             }
         });
         arbitrationArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getArbitrationArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("arbitration");
             }
         });
         steelPathArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getSteelPathArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("steelpath");
             }
         });
         zarimanArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getZarimanArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("zariman");
             }
         });
         quillsArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getQuillsArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("quills");
             }
         });
         necraliskArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getNecraliskArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("necralisk");
             }
         });
         duviriArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getDuviriArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("duviri");
             }
         });
         caviaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getCaviaArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                quillsArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                luaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("cavia");
             }
         });
         luaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getLuaArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                fortunaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("lua");
             }
         });
         fortunaArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getFortunaArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("fortuna");
             }
         });
         mirrorDefenseArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getMirrorDefenseArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("mirror");
             }
         });
         plagueStarArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getPlagueStarArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                voxSolarisArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("plague");
             }
         });
         voxSolarisArcaneSetFilter.selectedProperty().addListener((observable, unchecked, checked) -> {
             if (checked) {
                 arcaneSetList.setItems(FXCollections.observableArrayList(getData().getVoxSolarisArcaneSet()));
-                eidolonArcaneSetFilter.setSelected(false);
-                cetusArcaneSetFilter.setSelected(false);
-                arbitrationArcaneSetFilter.setSelected(false);
-                steelPathArcaneSetFilter.setSelected(false);
-                zarimanArcaneSetFilter.setSelected(false);
-                necraliskArcaneSetFilter.setSelected(false);
-                duviriArcaneSetFilter.setSelected(false);
-                caviaArcaneSetFilter.setSelected(false);
-                mirrorDefenseArcaneSetFilter.setSelected(false);
-                plagueStarArcaneSetFilter.setSelected(false);
+                clearSelectedFilter("vox");
             }
         });
         listOfArcanes.setScaleX(2.2);
@@ -378,558 +223,426 @@ public class ArcanicVosforatorInterface extends Application {
             switch (arcane) {
                 // arbitration arcane set.
                 case "Arcane Blade Charger":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Arcane Bodyguard":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Arcane Pistoleer":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Arcane Primary Charger":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Arcane Tanker":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 // arbitration arcane set.
                 // tyana pass arcane set.
                 case "Arcane Double Back":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Arcane Steadfast":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Primary Plated Round":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Secondary Encumber":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Secondary Kinship":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 // tyana pass arcane set.
                 // cavia arcane set.
                 case "Melee Fortification":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Melee Retaliation":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Melee Animosity":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Melee Exposure":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Melee Influence":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Melee Vortex":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Melee Crescendo":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(9, quantity);
                     break;
                 case "Melee Duplicate":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(9, quantity);
                     break;
                 // cavia arcane set.
                 // plague star arcane set.
                 case "Exodia Contagion":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(11), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(11, quantity);
                     break;
                 case "Exodia Epidemic":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(11), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(11, quantity);
                     break;
                 // plague star arcane set.
                 // cetus arcane set.
                 case "Exodia Brave":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Exodia Force":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Exodia Hunt":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Exodia Might":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Exodia Triumph":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Exodia Valor":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 // cetus arcane set.
                 // duviri arcane set.
                 case "Akimbo Slip Shot":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Arcane Intention":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Arcane Power Ramp":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Aggress":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Primary Blight":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Primary Exhilarate":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Primary Obstruct":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Secondary Outburst":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Shotgun Vendetta":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Arcane Reaper":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(9, quantity);
                     break;
                 case "Longbow Sharpshot":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(9, quantity);
                     break;
                 case "Secondary Shiver":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(9), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(9, quantity);
                     break;
                 // duviri arcane set.
                 // fortuna arcane set.
                 case "Pax Bolt":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Pax Charge":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Pax Seeker":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Pax Soar":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 // fortuna arcane set.
                 // lua arcane set.
                 case "Arcane Blessing":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Arcane Rise":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Conjunction Voltage":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Primary Frostbite":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 // lua arcane set.
                 // necralisk arcane set.
                 case "Residual Boils":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Residual Malodor":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Residual Shock":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Residual Viremia":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Theorem Contagion":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Theorem Demulcent":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Theorem Infection":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 // necralisk arcane set.
                 // eidolon arcane set.
                 case "Arcane Acceleration":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Aegis":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Agility":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Arachne":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Avenger":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Awakening":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Barrier":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(10, quantity);
                     break;
                 case "Arcane Consequence":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(2, quantity);
                     break;
                 case "Arcane Deflection":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Energize":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(10, quantity);
                     break;
                 case "Arcane Eruption":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Fury":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Grace":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(10), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(10, quantity);
                     break;
                 case "Arcane Guardian":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Healing":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Ice":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(2, quantity);
                     break;
                 case "Arcane Momentum":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(0), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(0, quantity);
                     break;
                 case "Arcane Nullifier":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(2, quantity);
                     break;
                 case "Arcane Phantasm":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Precision":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Pulse":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Rage":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Resistance":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Strike":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Tempo":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(2, quantity);
                     break;
                 case "Arcane Trickery":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Ultimatum":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(8), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(8, quantity);
                     break;
                 case "Arcane Velocity":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Victory":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(5), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(5, quantity);
                     break;
                 case "Arcane Warmth":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(2), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(2, quantity);
                     break;
                 // eidolon arcane set.
                 // steel path arcane set.
                 case "Primary Deadhead":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Primary Dexterity":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Primary Merciless":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Secondary Deadhead":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Secondary Dexterity":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 case "Secondary Merciless":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(4), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(4, quantity);
                     break;
                 // steel path arcane set.
                 // quills arcane set.
                 case "Magus Vigor":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Virtous Null":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Husk":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Virtous Tempo":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Virtous Fury":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Cadence":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Cloud":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Elevate":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Nourish":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Replenish":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Virtous Ghost":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Virtous Shadow":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Virtous Strike":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 // quills arcane set.
                 // vox solaris arcane set.
                 case "Virtous Spike":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Virtous Surge":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Virtous Forge":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Virtous Trojan":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Accelerant":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Anomaly":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Destruct":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Drive":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Firewall":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Glitch":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Lockdown":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Melt":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 case "Magus Overload":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(1, quantity);
                     break;
                 case "Magus Repair":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(3, quantity);
                     break;
                 case "Magus Revert":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(7, quantity);
                     break;
                 // vox solaris arcane set.
                 // zariman arcane set.
                 case "Cascadia Accuracy":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Emergence Savior":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Eternal Eradicate":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Fractalized Reset":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Molt Vigor":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Cascadia Flare":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Eternal Onslaught":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Cascadia Empowered":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Emergence Renewed":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Molt Efficiency":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Eternal Logistics":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Molt Reconstruct":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Cascadia Overcharge":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Emergence Dissipate":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 case "Molt Augmented":
-                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
-                    getData().addToGrandTotalVosforCount();
+                    addToVosforCount(6, quantity);
                     break;
                 // zariman arcane set.
             }
@@ -941,6 +654,11 @@ public class ArcanicVosforatorInterface extends Application {
         }
     }
 
+    private void addToVosforCount(int value, int quantity){
+        getData().addToTotalVosforCount(getData().getVosforRates().get(value), quantity);
+        getData().addToGrandTotalVosforCount();
+    }
+
     private void clearDataEvent() {
         getData().clearTotalVosforCount();
         getData().clearGrandTotalVosforCount();
@@ -948,20 +666,55 @@ public class ArcanicVosforatorInterface extends Application {
         listOfArcanes.clear();
         label.setText("");
         arcaneSetList.setItems(null);
-        eidolonArcaneSetFilter.setSelected(false);
-        cetusArcaneSetFilter.setSelected(false);
-        arbitrationArcaneSetFilter.setSelected(false);
-        steelPathArcaneSetFilter.setSelected(false);
-        zarimanArcaneSetFilter.setSelected(false);
-        quillsArcaneSetFilter.setSelected(false);
-        necraliskArcaneSetFilter.setSelected(false);
-        duviriArcaneSetFilter.setSelected(false);
-        caviaArcaneSetFilter.setSelected(false);
-        luaArcaneSetFilter.setSelected(false);
-        fortunaArcaneSetFilter.setSelected(false);
-        mirrorDefenseArcaneSetFilter.setSelected(false);
-        plagueStarArcaneSetFilter.setSelected(false);
-        voxSolarisArcaneSetFilter.setSelected(false);
+        clearSelected();
+    }
+
+    private void clearSelectedFilter(String filter){
+        if(!"eidolon".equals(filter)){
+            eidolonArcaneSetFilter.setSelected(false);
+        }
+        if(!"cetus".equals(filter)){
+            cetusArcaneSetFilter.setSelected(false);
+        }
+        if(!"arbitration".equals(filter)){
+            arbitrationArcaneSetFilter.setSelected(false);
+        }if(!"steelpath".equals(filter)){
+            steelPathArcaneSetFilter.setSelected(false);
+        }
+        if(!"zariman".equals(filter)){
+            zarimanArcaneSetFilter.setSelected(false);
+        }
+        if(!"quills".equals(filter)){
+            quillsArcaneSetFilter.setSelected(false);
+        }
+        if(!"necralisk".equals(filter)){
+            necraliskArcaneSetFilter.setSelected(false);
+        }
+        if(!"duviri".equals(filter)){
+            duviriArcaneSetFilter.setSelected(false);
+        }
+        if(!"cavia".equals(filter)){
+            caviaArcaneSetFilter.setSelected(false);
+        }
+        if(!"lua".equals(filter)){
+            luaArcaneSetFilter.setSelected(false);
+        }
+        if(!"fortuna".equals(filter)){
+            fortunaArcaneSetFilter.setSelected(false);
+        }
+        if(!"mirror".equals(filter)){
+            mirrorDefenseArcaneSetFilter.setSelected(false);
+        }
+        if(!"plague".equals(filter)){
+            plagueStarArcaneSetFilter.setSelected(false);
+        }
+        if(!"vox".equals(filter)){
+            voxSolarisArcaneSetFilter.setSelected(false);
+        }
+    }
+
+    private void clearSelected(){
+        clearSelectedFilter(null);
     }
 
     public static void main(String[] args) {
