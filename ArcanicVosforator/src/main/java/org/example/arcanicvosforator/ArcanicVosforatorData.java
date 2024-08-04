@@ -271,6 +271,7 @@ public class ArcanicVosforatorData {
         getVoxSolarisArcaneSet().add("Virtous Surge");
         getVoxSolarisArcaneSet().add("Virtous Forge");
         getVoxSolarisArcaneSet().add("Virtous Trojan");
+        getVoxSolarisArcaneSet().add("Magus Accelerant");
         getVoxSolarisArcaneSet().add("Magus Anomaly");
         getVoxSolarisArcaneSet().add("Magus Destruct");
         getVoxSolarisArcaneSet().add("Magus Drive");
@@ -287,7 +288,7 @@ public class ArcanicVosforatorData {
         getZarimanArcaneSet().add("Cascadia Accuracy");
         getZarimanArcaneSet().add("Emergence Savior");
         getZarimanArcaneSet().add("Eternal Eradicate");
-        getZarimanArcaneSet().add("Fractilized Reset");
+        getZarimanArcaneSet().add("Fractalized Reset");
         getZarimanArcaneSet().add("Molt Vigor");
         getZarimanArcaneSet().add("Cascadia Flare");
         getZarimanArcaneSet().add("Eternal Onslaught");

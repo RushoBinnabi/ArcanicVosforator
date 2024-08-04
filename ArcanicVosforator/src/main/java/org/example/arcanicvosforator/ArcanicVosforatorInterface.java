@@ -13,6 +13,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 @SuppressWarnings("DuplicateBranchesInSwitch") // there was nothing wrong with the branches.
@@ -46,6 +47,7 @@ public class ArcanicVosforatorInterface extends Application {
     CheckBox plagueStarArcaneSetFilter = new CheckBox();
     CheckBox voxSolarisArcaneSetFilter = new CheckBox();
     ArrayList<String> arcaneList = new ArrayList<>();
+    DecimalFormat numberFormat = new DecimalFormat("#,###,###");
 
     public ArcanicVosforatorData getData() {
         return data;
@@ -72,7 +74,7 @@ public class ArcanicVosforatorInterface extends Application {
                 steelPathArcaneSetFilter, zarimanArcaneSetFilter, quillsArcaneSetFilter, necraliskArcaneSetFilter,
                 duviriArcaneSetFilter, caviaArcaneSetFilter, luaArcaneSetFilter, fortunaArcaneSetFilter,
                 mirrorDefenseArcaneSetFilter, plagueStarArcaneSetFilter, voxSolarisArcaneSetFilter);
-        arcaneSetFilters.setPadding(new Insets(50,50,50,50));
+        arcaneSetFilters.setPadding(new Insets(50, 50, 50, 50));
         arcaneSetFilters.setSpacing(12);
         arcaneSetFilters.setAlignment(Pos.TOP_CENTER);
         setArcanes();
@@ -367,7 +369,7 @@ public class ArcanicVosforatorInterface extends Application {
         try {
             quantity = Integer.parseInt(arcaneQuantity.getText());
             arcane = String.valueOf(arcaneSetList.getValue());
-            listOfArcanes.setFont(Font.font("Ariel", 9));
+            listOfArcanes.setFont(Font.font("Serif", 9));
             arcaneList.add(quantity + "x" + " " + arcane);
             for (String s : arcaneList) {
                 listOfArcanes.appendText(s + "\n");
@@ -753,8 +755,185 @@ public class ArcanicVosforatorInterface extends Application {
                     break;
                 // steel path arcane set.
                 // quills arcane set.
+                case "Magus Vigor":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Null":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Husk":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Tempo":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Fury":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Cadence":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Cloud":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Elevate":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Nourish":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Replenish":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Ghost":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Shadow":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Strike":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // quills arcane set.
+                // vox solaris arcane set.
+                case "Virtous Spike":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Surge":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Forge":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Virtous Trojan":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Accelerant":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Anomaly":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Destruct":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Drive":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Firewall":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Glitch":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Lockdown":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Melt":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Overload":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(1), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Repair":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(3), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Magus Revert":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(7), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // vox solaris arcane set.
+                // zariman arcane set.
+                case "Cascadia Accuracy":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Emergence Savior":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Eternal Eradicate":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Fractalized Reset":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Molt Vigor":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Cascadia Flare":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Eternal Onslaught":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Cascadia Empowered":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Emergence Renewed":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Molt Efficiency":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Eternal Logistics":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Molt Reconstruct":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Cascadia Overcharge":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Emergence Dissipate":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                case "Molt Augmented":
+                    getData().addToTotalVosforCount(getData().getVosforRates().get(6), quantity);
+                    getData().addToGrandTotalVosforCount();
+                    break;
+                // zariman arcane set.
             }
-            label.setText("Total" + " " + getData().getGrandTotalVosfor());
+            label.setText("Total" + " " + numberFormat.format(getData().getGrandTotalVosfor()));
             getData().clearGrandTotalVosforCount();
         }
         catch (Exception e) {
