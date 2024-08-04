@@ -666,7 +666,7 @@ public class ArcanicVosforatorInterface extends Application {
         listOfArcanes.clear();
         label.setText("");
         arcaneSetList.setItems(null);
-        clearSelected();
+        clearSelectedFilter(null);
     }
 
     private void clearSelectedFilter(String filter){
@@ -711,10 +711,6 @@ public class ArcanicVosforatorInterface extends Application {
         if(!"vox".equals(filter)){
             voxSolarisArcaneSetFilter.setSelected(false);
         }
-    }
-
-    private void clearSelected(){
-        clearSelectedFilter(null);
     }
 
     public static void main(String[] args) {
