@@ -120,6 +120,8 @@
       <workItem from="1722689729512" duration="2889000" />
       <workItem from="1722705182042" duration="594000" />
       <workItem from="1722775383161" duration="3737000" />
+      <workItem from="1722781402015" duration="63000" />
+      <workItem from="1722946390903" duration="7001000" />
     </task>
     <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
       <option name="closed" value="true" />
@@ -206,6 +208,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="switched to Java and JavaFX for the project for ease of use." />

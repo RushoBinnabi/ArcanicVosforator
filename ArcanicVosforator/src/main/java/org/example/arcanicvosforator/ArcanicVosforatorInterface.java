@@ -1,3 +1,10 @@
+/**
+ * Name: Rusho Binnabi
+ * Date: 8/6/2024
+ * Project: Arcanic Vosforator
+ * Contact Information: RushoBinnabi123@yahoo.com
+ */
+
 package org.example.arcanicvosforator;
 
 import javafx.application.Application;
@@ -17,7 +24,10 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 @SuppressWarnings("DuplicateBranchesInSwitch") // there was nothing wrong with the branches.
+
 public class ArcanicVosforatorInterface extends Application {
+
+    // this ArcanicVosforatorInterface class is the class that runs the overall application.
 
     private final ArcanicVosforatorData data = new ArcanicVosforatorData();
     ComboBox arcaneSetList = new ComboBox();
@@ -49,9 +59,19 @@ public class ArcanicVosforatorInterface extends Application {
     ArrayList<String> arcaneList = new ArrayList<>();
     DecimalFormat numberFormat = new DecimalFormat("#,###,###");
 
+    /**
+     * this getData() method gets the data from the ArcanicVosforatorData class.
+     * @return the data from the ArcanicVosforatorData class.
+     */
+
     public ArcanicVosforatorData getData() {
         return data;
     }
+
+    /**
+     * this start() method has everything needed for the application to function.
+     * @param stage the window of the application.
+     */
 
     @Override
     public void start(Stage stage) {
@@ -191,6 +211,10 @@ public class ArcanicVosforatorInterface extends Application {
         stage.show();
     }
 
+    /**
+     * this setArcanes() method sets the arcane sets in their array lists.
+     */
+
     public void setArcanes() {
         getData().setEidolonArcaneSet();
         getData().setZarimanArcaneSet();
@@ -207,6 +231,10 @@ public class ArcanicVosforatorInterface extends Application {
         getData().setSteelPathArcaneSet();
         getData().setVoxSolarisArcaneSet();
     }
+
+    /**
+     * this selectArcaneEvent() method handles the process of getting the amount of vosfor for the breakdown of the arcane sets.
+     */
 
     private void selectArcaneEvent() {
         int quantity;
@@ -654,10 +682,20 @@ public class ArcanicVosforatorInterface extends Application {
         }
     }
 
+    /**
+     * this addToVosforCount() method fixes some issues with the vosfor calculations.
+     * @param value // how much the arcanes are worth in vosfor.
+     * @param quantity the amount of arcanes being broken down.
+     */
+
     private void addToVosforCount(int value, int quantity){
         getData().addToTotalVosforCount(getData().getVosforRates().get(value), quantity);
         getData().addToGrandTotalVosforCount();
     }
+
+    /**
+     * this clearDataEvent() clears the data.
+     */
 
     private void clearDataEvent() {
         getData().clearTotalVosforCount();
@@ -668,6 +706,11 @@ public class ArcanicVosforatorInterface extends Application {
         arcaneSetList.setItems(null);
         clearSelectedFilter(null);
     }
+
+    /**
+     * this clearSelectedFilter() method clears the filters for the arcane sets.
+     * @param filter the selected filter being cleared.
+     */
 
     private void clearSelectedFilter(String filter){
         if(!"eidolon".equals(filter)){
@@ -712,6 +755,11 @@ public class ArcanicVosforatorInterface extends Application {
             voxSolarisArcaneSetFilter.setSelected(false);
         }
     }
+
+    /**
+     * this main() method runs the code.
+     * @param args the application being run.
+     */
 
     public static void main(String[] args) {
         launch();

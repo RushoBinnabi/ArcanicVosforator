@@ -1,8 +1,17 @@
+/**
+ * Name: Rusho Binnabi
+ * Date: 8/6/2024
+ * Project: Arcanic Vosforator
+ * Contact Information: RushoBinnabi123@yahoo.com
+ */
+
 package org.example.arcanicvosforator;
 
 import java.util.ArrayList;
 
 public class ArcanicVosforatorData {
+
+    // this ArcanicVosforatorData data has the data needed for the Arcanic Vosforator project to work.
 
     private final ArrayList<Integer> vosforRates = new ArrayList<>();
     private final ArrayList<String> arbitrationArcaneSet = new ArrayList<>();
@@ -25,93 +34,204 @@ public class ArcanicVosforatorData {
     private int totalVosfor = 0;
     private int grandTotalVosforCount = 0;
 
+    /**
+     * this getTotalVosforCount() method gets the total vosfor count.
+     * @return the total vosfor count.
+     */
+
     public int getTotalVosforCount() {
         return totalVosfor;
     }
+
+    /**
+     * this addToTotalVosforCount() method adds to the total vosfor count for the arcanes.
+     * @param vosforRate how much the arcanes are worth in vosfor.
+     * @param arcaneQuantity the number of arcanes being broken down.
+     */
 
     public void addToTotalVosforCount(int vosforRate, int arcaneQuantity) {
         totalVosfor += (vosforRate * arcaneQuantity);
     }
 
+    /**
+     * this clearTotalVosforCount() method clears the total vosfor.
+     */
+
     public void clearTotalVosforCount() {
         totalVosfor = 0;
     }
+
+    /**
+     * this getGrandTotalVosfor() method gets the grand total amount of vosfor.
+     * @return the grand total amount of vosfor.
+     */
 
     public int getGrandTotalVosfor() {
         return grandTotalVosforCount;
     }
 
+    /**
+     * this addToGrandTotalVosforCount() method adds to the grand total vosfor count every time arcanes gets broken down.
+     */
+
     public void addToGrandTotalVosforCount() {
         grandTotalVosforCount += getTotalVosforCount();
     }
+
+    /**
+     * this clearGrandTotalVosforCount() method clears the grand total vosfor count.
+     */
 
     public void clearGrandTotalVosforCount() {
         grandTotalVosforCount = 0;
     }
 
+    /**
+     * empty constructor.
+     */
+
     public ArcanicVosforatorData() {
 
     }
+
+    /**
+     * this getVosforRates() method gets the array list of vosfor values for the arcanes.
+     * @return the array list of vosfor values for the arcanes.
+     */
 
     public ArrayList<Integer> getVosforRates() {
         return vosforRates;
     }
 
+    /**
+     * this getArbitrationArcaneSet() method gets the array list of the arbitration arcane set.
+     * @return the array list of the arbitration arcane set.
+     */
+
     public ArrayList<String> getArbitrationArcaneSet() {
         return arbitrationArcaneSet;
     }
+
+    /**
+     * this getMirrorDefenseArcaneSet() method gets the array list of the mirror defense arcane set.
+     * @return the array list of the mirror defense arcane set.
+     */
 
     public ArrayList<String> getMirrorDefenseArcaneSet() {
         return mirrorDefenseArcaneSet;
     }
 
+    /**
+     * this getCaviaArcaneSet() method gets the array list of the cavia arcane set.
+     * @return the array list of the cavia arcane set.
+     */
+
     public ArrayList<String> getCaviaArcaneSet() {
         return caviaArcaneSet;
     }
+
+    /**
+     * this getPlagueStarArcaneSet() method gets the array list of the plague star arcane set.
+     * @return the array list of the plague star arcane set.
+     */
 
     public ArrayList<String> getPlagueStarArcaneSet() {
         return plagueStarArcaneSet;
     }
 
+    /**
+     * this getCetusArcaneSet() method gets the array list of the cetus arcane set.
+     * @return the array list of the cetus arcane set.
+     */
+
     public ArrayList<String> getCetusArcaneSet() {
         return cetusArcaneSet;
     }
+
+    /**
+     * this getDuviriArcaneSet() method gets the array list of the duviri arcane set.
+     * @return the array list of the duviri arcane set.
+     */
 
     public ArrayList<String> getDuviriArcaneSet() {
         return duviriArcaneSet;
     }
 
+    /**
+     * this getFortunaArcaneSet() method gets the array list of the fortuna arcane set.
+     * @return the array list of the fortuna arcane set.
+     */
+
     public ArrayList<String> getFortunaArcaneSet() {
         return fortunaArcaneSet;
     }
+
+    /**
+     * this getLuaArcaneSet() method gets the array list of the lua arcane set.
+     * @return the array list of the lua arcane set.
+     */
 
     public ArrayList<String> getLuaArcaneSet() {
         return luaConjunctionArcaneSet;
     }
 
+    /**
+     * this getNecraliskArcaneSet() method gets the array list of the necralisk arcane set.
+     * @return the array list of the necralisk arcane set.
+     */
+
     public ArrayList<String> getNecraliskArcaneSet() {
         return necraliskArcaneSet;
     }
+
+    /**
+     * this getEidolonArcaneSet() method gets the array list of the eidolon arcane set.
+     * @return the array list of the eidolon arcane set.
+     */
 
     public ArrayList<String> getEidolonArcaneSet() {
         return eidolonArcaneSet;
     }
 
+    /**
+     * this getSteelPathArcaneSet() method gets the array list of the steel path arcane set.
+     * @return the array list of the steel path arcane set.
+     */
+
     public ArrayList<String> getSteelPathArcaneSet() {
         return steelPathArcaneSet;
     }
+
+    /**
+     * this getQuillsArcaneSet() method gets the array list of the quills arcane set.
+     * @return the array list of the quills arcane set.
+     */
 
     public ArrayList<String> getQuillsArcaneSet() {
         return quillsArcaneSet;
     }
 
+    /**
+     * this getVoxSolarisArcaneSet() method gets the array list of the vox solaris arcane set.
+     * @return the array list of the vox solaris arcane set.
+     */
+
     public ArrayList<String> getVoxSolarisArcaneSet() {
         return voxSolarisArcaneSet;
     }
 
+    /**
+     * this getZarimanArcaneSet() method gets the array list of the zariman arcane set.
+     * @return the array list of the zariman arcane set.
+     */
+
     public ArrayList<String> getZarimanArcaneSet() {
         return zarimanArcaneSet;
     }
+
+    /**
+     * this setVosforRates() method sets the vosfor values for the arcane sets.
+     */
 
     public void setVosforRates() {
         getVosforRates().add(3); // index 0
@@ -128,6 +248,10 @@ public class ArcanicVosforatorData {
         getVosforRates().add(0); // index 11.
     }
 
+    /**
+     * this setArbitrationArcaneSet() method sets the array list for the arbitration arcane set.
+     */
+
     public void setArbitrationArcaneSet() {
         getArbitrationArcaneSet().add("Arcane Blade Charger");
         getArbitrationArcaneSet().add("Arcane Bodyguard");
@@ -136,6 +260,10 @@ public class ArcanicVosforatorData {
         getArbitrationArcaneSet().add("Arcane Tanker");
     }
 
+    /**
+     * this setMirrorDefenseArcaneSet() method sets the array list for the mirror defense arcane set.
+     */
+
     public void setMirrorDefenseArcaneSet() {
         getMirrorDefenseArcaneSet().add("Arcane Double Back");
         getMirrorDefenseArcaneSet().add("Arcane Steadfast");
@@ -143,6 +271,10 @@ public class ArcanicVosforatorData {
         getMirrorDefenseArcaneSet().add("Secondary Encumber");
         getMirrorDefenseArcaneSet().add("Secondary Kinship");
     }
+
+    /**
+     * this setCaviaArcaneSet() method sets the array list for the cavia arcane set.
+     */
 
     public void setCaviaArcaneSet() {
         getCaviaArcaneSet().add("Melee Fortification");
@@ -155,10 +287,18 @@ public class ArcanicVosforatorData {
         getCaviaArcaneSet().add("Melee Duplicate");
     }
 
+    /**
+     * this setPlagueStarArcaneSet() method sets the array list for the plague star arcane set.
+     */
+
     public void setPlagueStarArcaneSet() {
         getPlagueStarArcaneSet().add("Exodia Contagion");
         getPlagueStarArcaneSet().add("Exodia Epidemic");
     }
+
+    /**
+     * this setCetusArcaneSet() method sets the array list for the cetus arcane set.
+     */
 
     public void setCetusArcaneSet() {
         getCetusArcaneSet().add("Exodia Brave");
@@ -168,6 +308,10 @@ public class ArcanicVosforatorData {
         getCetusArcaneSet().add("Exodia Triumph");
         getCetusArcaneSet().add("Exodia Valor");
     }
+
+    /**
+     * this setDuviriArcaneSet() method sets the array list for the duviri arcane set.
+     */
 
     public void setDuviriArcaneSet() {
         getDuviriArcaneSet().add("Akimbo Slip Shot");
@@ -184,6 +328,10 @@ public class ArcanicVosforatorData {
         getDuviriArcaneSet().add("Secondary Shiver");
     }
 
+    /**
+     * this setFortunaArcaneSet() method sets the array list for the fortuna arcane set.
+     */
+
     public void setFortunaArcaneSet() {
         getFortunaArcaneSet().add("Pax Bolt");
         getFortunaArcaneSet().add("Pax Charge");
@@ -191,12 +339,20 @@ public class ArcanicVosforatorData {
         getFortunaArcaneSet().add("Pax Soar");
     }
 
+    /**
+     * this setLuaArcaneSet() method sets the array list for the lua arcane set.
+     */
+
     public void setLuaArcaneSet() {
         getLuaArcaneSet().add("Arcane Blessing");
         getLuaArcaneSet().add("Arcane Rise");
         getLuaArcaneSet().add("Conjunction Voltage");
         getLuaArcaneSet().add("Primary Frostbite");
     }
+
+    /**
+     * this setNecraliskArcaneSet() method sets the array list for the necralisk arcane set.
+     */
 
     public void setNecraliskArcaneSet() {
         getNecraliskArcaneSet().add("Residual Boils");
@@ -207,6 +363,10 @@ public class ArcanicVosforatorData {
         getNecraliskArcaneSet().add("Theorem Demulcent");
         getNecraliskArcaneSet().add("Theorem Infection");
     }
+
+    /**
+     * this setEidolonArcaneSet() method sets the array list for the eidolon arcane set.
+     */
 
     public void setEidolonArcaneSet() {
         getEidolonArcaneSet().add("Arcane Acceleration");
@@ -241,6 +401,10 @@ public class ArcanicVosforatorData {
         getEidolonArcaneSet().add("Arcane Warmth");
     }
 
+    /**
+     * this setSteelPathArcaneSet() method sets the array list for the steel path arcane set.
+     */
+
     public void setSteelPathArcaneSet() {
         getSteelPathArcaneSet().add("Primary Deadhead");
         getSteelPathArcaneSet().add("Primary Dexterity");
@@ -249,6 +413,10 @@ public class ArcanicVosforatorData {
         getSteelPathArcaneSet().add("Secondary Dexterity");
         getSteelPathArcaneSet().add("Secondary Merciless");
     }
+
+    /**
+     * this setQuillsArcaneSet() method sets the array list for the quills arcane set.
+     */
 
     public void setQuillsArcaneSet() {
         getQuillsArcaneSet().add("Magus Vigor");
@@ -265,6 +433,10 @@ public class ArcanicVosforatorData {
         getQuillsArcaneSet().add("Virtous Shadow");
         getQuillsArcaneSet().add("Virtous Strike");
     }
+
+    /**
+     * this setVoxSolarisArcaneSet() method sets the array list for the vox solaris arcane set.
+     */
 
     public void setVoxSolarisArcaneSet() {
         getVoxSolarisArcaneSet().add("Virtous Spike");
@@ -283,6 +455,10 @@ public class ArcanicVosforatorData {
         getVoxSolarisArcaneSet().add("Magus Repair");
         getVoxSolarisArcaneSet().add("Magus Revert");
     }
+
+    /**
+     * this setZarimanArcaneSet() method sets the array list for the zariman arcane set.
+     */
 
     public void setZarimanArcaneSet() {
         getZarimanArcaneSet().add("Cascadia Accuracy");
