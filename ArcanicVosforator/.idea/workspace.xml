@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="fixed bug with the grand total of the vosfor breakdown and added functionality for more arcane sets selections">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/arcanicvosforator/ArcanicVosforatorInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="7810268c-80bd-44cd-a997-f844cc929bd3" name="Changes" comment="fixed bug with the grand total of the vosfor breakdown and added functionality for more arcane sets selections" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +118,7 @@
       <workItem from="1722775383161" duration="3737000" />
       <workItem from="1722781402015" duration="63000" />
       <workItem from="1722946390903" duration="7001000" />
+      <workItem from="1723292457624" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="switched to Java and JavaFX for the project for ease of use.">
       <option name="closed" value="true" />
