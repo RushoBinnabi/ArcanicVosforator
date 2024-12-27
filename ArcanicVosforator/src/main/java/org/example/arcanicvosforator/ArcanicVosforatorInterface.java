@@ -56,6 +56,7 @@ public class ArcanicVosforatorInterface extends Application {
     CheckBox mirrorDefenseArcaneSetFilter = new CheckBox();
     CheckBox plagueStarArcaneSetFilter = new CheckBox();
     CheckBox voxSolarisArcaneSetFilter = new CheckBox();
+    CheckBox arcaneSet1999 = new CheckBox();
     ArrayList<String> arcaneList = new ArrayList<>();
     DecimalFormat numberFormat = new DecimalFormat("#,###,###");
 
@@ -90,10 +91,11 @@ public class ArcanicVosforatorInterface extends Application {
         mirrorDefenseArcaneSetFilter.setText("Mirror Defense Arcane Set");
         plagueStarArcaneSetFilter.setText("Plague Star Arcane Set");
         voxSolarisArcaneSetFilter.setText("Vox Solaris Arcane Set");
+        arcaneSet1999.setText("1999 Arcane Set");
         arcaneSetFilters.getChildren().addAll(eidolonArcaneSetFilter, cetusArcaneSetFilter, arbitrationArcaneSetFilter,
                 steelPathArcaneSetFilter, zarimanArcaneSetFilter, quillsArcaneSetFilter, necraliskArcaneSetFilter,
                 duviriArcaneSetFilter, caviaArcaneSetFilter, luaArcaneSetFilter, fortunaArcaneSetFilter,
-                mirrorDefenseArcaneSetFilter, plagueStarArcaneSetFilter, voxSolarisArcaneSetFilter);
+                mirrorDefenseArcaneSetFilter, plagueStarArcaneSetFilter, voxSolarisArcaneSetFilter, arcaneSet1999);
         arcaneSetFilters.setPadding(new Insets(50, 50, 50, 50));
         arcaneSetFilters.setSpacing(12);
         arcaneSetFilters.setAlignment(Pos.TOP_CENTER);
@@ -183,6 +185,12 @@ public class ArcanicVosforatorInterface extends Application {
                 clearSelectedFilter("vox");
             }
         });
+        arcaneSet1999.selectedProperty().addListener((observable, unchecked, checked) -> {
+            if (checked) {
+                arcaneSetList.setItems(FXCollections.observableArrayList(getData().getArcaneSet1999()));
+                clearSelectedFilter("arcane");
+            }
+        });
         listOfArcanes.setScaleX(2.2);
         listOfArcanes.setPrefSize(150, 450);
         buttons.getChildren().addAll(selectArcane, clearArcanes);
@@ -230,6 +238,7 @@ public class ArcanicVosforatorInterface extends Application {
         getData().setPlagueStarArcaneSet();
         getData().setSteelPathArcaneSet();
         getData().setVoxSolarisArcaneSet();
+        getData().setArcaneSet1999();
     }
 
     /**
@@ -673,12 +682,38 @@ public class ArcanicVosforatorInterface extends Application {
                     addToVosforCount(6, quantity);
                     break;
                 // zariman arcane set.
+                // 1999 arcane set.
+                case "Arcane Bellicose":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Arcane Camisado":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Arcane Crepuscular":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Arcane Impetus":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Arcane Truculence":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Melee Doughty":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Primary Crux":
+                    addToVosforCount(7, quantity);
+                    break;
+                case "Secondary Enervate":
+                    addToVosforCount(7, quantity);
+                    break;
+                // 1999 arcane set.
             }
-            label.setText("Total" + " " + numberFormat.format(getData().getGrandTotalVosfor()));
+            label.setText("Total Vosfor:" + " " + numberFormat.format(getData().getGrandTotalVosfor()));
             getData().clearGrandTotalVosforCount();
         }
         catch (Exception e) {
-            label.setText("Error. Please make sure you select an arcane and quantity");
+            label.setText("Error. Please make selections.");
         }
     }
 
@@ -753,6 +788,9 @@ public class ArcanicVosforatorInterface extends Application {
         }
         if(!"vox".equals(filter)){
             voxSolarisArcaneSetFilter.setSelected(false);
+        }
+        if (!"arcane".equals(filter)){
+            arcaneSet1999.setSelected(false);
         }
     }
 

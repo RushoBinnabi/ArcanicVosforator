@@ -28,6 +28,7 @@ public class ArcanicVosforatorData {
     private final ArrayList<String> quillsArcaneSet = new ArrayList<>();
     private final ArrayList<String> voxSolarisArcaneSet = new ArrayList<>();
     private final ArrayList<String> zarimanArcaneSet = new ArrayList<>();
+    private final ArrayList<String> arcaneSet1999 = new ArrayList<>();
     static final int UI_HEIGHT = 620;
     static final int UI_WIDTH = 800;
 
@@ -227,6 +228,15 @@ public class ArcanicVosforatorData {
 
     public ArrayList<String> getZarimanArcaneSet() {
         return zarimanArcaneSet;
+    }
+
+    /**
+     * this getArcaneSet1999() method gets the array list of the 1999 arcane set.
+     * @return the array list of the 1999 arcane set.
+     */
+
+    public ArrayList<String> getArcaneSet1999() {
+        return arcaneSet1999;
     }
 
     /**
@@ -475,6 +485,17 @@ public class ArcanicVosforatorData {
         getZarimanArcaneSet().add("Cascadia Overcharge");
         getZarimanArcaneSet().add("Emergence Dissipate");
         getZarimanArcaneSet().add("Molt Augmented");
+    }
+
+    public void setArcaneSet1999() {
+        getArcaneSet1999().add("Arcane Bellicose");
+        getArcaneSet1999().add("Arcane Camisado");
+        getArcaneSet1999().add("Arcane Crepuscular");
+        getArcaneSet1999().add("Arcane Impetus");
+        getArcaneSet1999().add("Arcane Truculence");
+        getArcaneSet1999().add("Melee Doughty");
+        getArcaneSet1999().add("Primary Crux");
+        getArcaneSet1999().add("Secondary Enervate");
     }
 
 }
